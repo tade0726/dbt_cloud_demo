@@ -1,0 +1,6 @@
+locations:
+- build:
+    directory: ./dbt_cloud_demo
+  code_source:
+    module_name: dbt_cloud_demo.definitions
+  location_name: dbt_cloud_demo
