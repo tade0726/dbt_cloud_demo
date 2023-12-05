@@ -1,0 +1,11 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      catalog: hive_metastore
+      host: adb-2991214597289954.14.azuredatabricks.net
+      http_path: sql/protocolv1/o/2991214597289954/0915-013701-xsrzv9e6
+      schema: dbt_dagster_cloud_demo
+      threads: 1
+      token: dapi837a59b2a03b3d221391578eb7788db7
+      type: databricks

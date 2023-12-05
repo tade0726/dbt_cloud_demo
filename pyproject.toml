@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dbt-snp"
+version = "0.1.0"
+description = ""
+authors = ["ted <zp4work@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.13"
+dbt-databricks = "^1.7.1"
+pyspark = "^3.5.0"
+shandy-sqlfmt = "^0.21.0"
+dagster-dbt = "^0.21.9"
+dagster-webserver = "^1.5.9"
+statsmodels = "^0.14.0"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
