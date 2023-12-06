@@ -6,3 +6,9 @@ logs/
 
 # __pycache__
 **/__pycache__/*
+
+# env
+.env
+
+# poetry
+poetry.lock

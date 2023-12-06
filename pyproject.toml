@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "dbt-snp"
+name = "dbt_cloud_demo"
 version = "0.1.0"
 description = ""
 authors = ["ted <zp4work@gmail.com>"]
@@ -13,10 +13,12 @@ shandy-sqlfmt = "^0.21.0"
 dagster-dbt = "^0.21.9"
 dagster-webserver = "^1.5.9"
 statsmodels = "^0.14.0"
+dagster-cloud = "^1.5.10"
 
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
+
 
 [build-system]
 requires = ["poetry-core"]

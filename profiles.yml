@@ -1,11 +1,23 @@
-default:
+prod:
+  target: prod
+  outputs:
+    prod:
+      catalog: hive_metastore
+      host: adb-2991214597289954.14.azuredatabricks.net
+      http_path: sql/protocolv1/o/2991214597289954/0915-013701-xsrzv9e6
+      schema: dbt_dagster_cloud_demo
+      threads: 1
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      type: databricks
+
+dev:
   target: dev
   outputs:
     dev:
       catalog: hive_metastore
       host: adb-2991214597289954.14.azuredatabricks.net
       http_path: sql/protocolv1/o/2991214597289954/0915-013701-xsrzv9e6
-      schema: dbt_dagster_cloud_demo
+      schema: dbt_dagster_cloud_dev
       threads: 1
-      token: dapi837a59b2a03b3d221391578eb7788db7
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
       type: databricks
