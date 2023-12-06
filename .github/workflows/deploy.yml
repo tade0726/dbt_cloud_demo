@@ -59,6 +59,7 @@ jobs:
           DAGSTER_PROJECT_NAME: "dbt_cloud_demo"
           DBT_PROJECT_DIR: "$GITHUB_WORKSPACE/project-repo"
           DBT_PACKAGE_DATA_DIR: "$GITHUB_WORKSPACE/project-repo/$DAGSTER_PROJECT_NAME/dbt-project"
+          DEPLOY_ENV: "prod"
 
       - name: Python Executable Deploy
         if: steps.prerun.outputs.result == 'pex-deploy'
