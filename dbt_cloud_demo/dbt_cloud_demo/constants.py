@@ -6,7 +6,7 @@ from dagster_dbt import DbtCliResource
 # We expect the dbt project to be installed as package data.
 # For details, see https://docs.python.org/3/distutils/setupscript.html#installing-package-data.
 
-if os.getenv("DEPLOY_ENV") == "prod":
+if os.getenv("DEPLOY_ENV") in ("prod", "staging"):
     dbt_project_dir = Path(__file__).joinpath("..", "..", "dbt-project").resolve()
 else:
     dbt_project_dir = Path(__file__).joinpath("..", "..", "..").resolve()
